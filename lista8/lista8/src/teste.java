@@ -2,12 +2,11 @@ public class teste {
     
     public static void main(String [] args){
 
-        Quadrado lego = new Quadrado();
+        Tv samsung = new Tv();
 
-        lego.lado = 10;
-
-        lego.mudaLado(8);
-        lego.mostraLado();
-        lego.area();
+        samsung.setDigitaCanal(1);
+        samsung.alteraCanal(false);
+        samsung.aumentaVol(false);
+        samsung.status();
     }
 }
