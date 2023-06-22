@@ -102,6 +102,8 @@ public class ex28 {
             }
         }
 
+        scanner.close();
+
         double valor = 0;
 
         if (carneCliente.equals("File Duplo")){
