@@ -18,19 +18,22 @@ public class ex21 {
     public static void main(String [] args){
 
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("%nPara sacar o dinheiro de sua conta, insira a seguir o valor desejado: ");
-        int saque = scanner.nextInt();
+        int saque = 0;
         
         while(true){
             try {
-                if(saque < 10 || saque > 600){
+                System.out.printf("%nPara sacar o dinheiro de sua conta, insira a seguir o valor desejado: ");
+                int valCliente = scanner.nextInt();
+                if(valCliente < 10 || valCliente > 600){
                     throw new Exception();
+                }
+                else {
+                    saque = valCliente;
                 }
             break;
             } catch(Exception saqInv){
-                System.out.printf("%nO saque inserido é inválido, %ninsira apenas valores maiores que R$ 10,00 e menores que R$ 600,00.");
-                System.out.printf("%nInsira novamente, o valor que você deseja sacar: ");
-                saque = scanner.nextInt();
+                System.out.printf("%nO saque inserido é inválido, %ninsira apenas valores maiores que R$ 10,00 e menores que R$ 600,00.%n");
+                scanner.nextLine();
             }
         }
 
