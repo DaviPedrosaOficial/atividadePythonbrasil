@@ -7,12 +7,12 @@ com valor default zero e os demais atributos são obrigatórios.
 public class ContaCorrente {
     
     private int numConta;
-    private String nomeCor;
+    private String nomeCon;
     private double saldo = 0;
 
-    public ContaCorrente(int numConta, String nomeCor){
+    public ContaCorrente(int numConta, String nomeCon){
         this.setNumConta(numConta);
-        this.setNomeCor(nomeCor);
+        this.setNomeCon(nomeCon);
     }
 
     public int getNumConta(){
@@ -23,16 +23,16 @@ public class ContaCorrente {
         this.numConta = num;
     }
 
-    public String getNomeCor(){
-        return this.nomeCor;
+    public void getnomeCon(){
+        System.out.printf("%nNome da Conta: %s",this.nomeCon);
     }
 
-    public void setNomeCor (String nome){
-        this.nomeCor = nome;
+    public void setNomeCon (String nome){
+        this.nomeCon = nome;
     }
 
     public void alterarNome(String nome){
-        this.nomeCor = nome;
+        this.nomeCon = nome;
     }
 
     public void deposito(double valor){
@@ -44,6 +44,6 @@ public class ContaCorrente {
     }
 
     public void status(){
-        System.out.printf("Nome do proprietário: %s%nNumero da conta: %d%nSaldo em conta: %.2f",this.nomeCor,this.numConta,this.saldo);
+        System.out.printf("Nome do proprietário: %s%nNumero da conta: %d%nSaldo em conta: %.2f",this.nomeCon,this.numConta,this.saldo);
     }
 }

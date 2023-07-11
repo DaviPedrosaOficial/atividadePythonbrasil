@@ -20,13 +20,13 @@ public class BombaCombustivel {
     
     public void abastecerPorValor(double valor){
         double total = valor / valComb;
-        this.quantTotalCombustivel -= total;
+        this.quantTotalCombustivel += total;
         System.out.printf("%nSerá abastecido %.2f litros.", total);
     }
 
     public void abastecerPorLitro (double quant){
         double valor = quant * valComb;
-        this.quantTotalCombustivel -= quant;
+        this.quantTotalCombustivel += quant;
         System.out.printf("%nO valor total será de R$%.2f .",valor);
     }
 

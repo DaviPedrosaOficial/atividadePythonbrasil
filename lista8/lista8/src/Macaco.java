@@ -20,8 +20,8 @@ public class Macaco {
         this.nome = nome;
     }
 
-    public String getNome(){
-        return this.nome;
+    public void getNome(){
+        System.out.printf("%nNome do macaco: %s",this.nome);
     }
 
     public void comer(String alimento){
@@ -32,7 +32,7 @@ public class Macaco {
     }
 
     public void getBucho(){
-        System.out.print(this.bucho);
+        System.out.printf("%nBucho do macaco %s : %s",this.nome,this.bucho);
     }
 
     public void digerir(){
