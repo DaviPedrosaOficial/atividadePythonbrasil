@@ -7,7 +7,7 @@ public class MacacoTeste {
 
         bobba.comer("Banana");
         bobba.comer("Ração");
-        bobba.comer(caco); //Não é possível comer o outro macaco.
+        bobba.comer("Carne"); //Não é possível comer o outro macaco.
         bobba.digerir();
         bobba.getBucho();
 
