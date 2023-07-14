@@ -1,3 +1,4 @@
+package Fazenda;
 /*Classe Bichinho Virtual:Crie uma classe que modele um Tamagushi (Bichinho Eletrônico):
 
 Atributos: Nome, Fome, Saúde e Idade b. Métodos: Alterar Nome, Fome, Saúde e Idade; 
@@ -21,13 +22,13 @@ public class Tamagushi {
         this.idade = idade;
 
         if (this.saúde == true && this.fome == false){
-            this.humor = "Feliz";
+            this.humor = "feliz";
         }
         else if ((this.saúde == true && this.fome == true)||(this.saúde == false && this.fome == false)){
-            this.humor = "Triste";
+            this.humor = "triste";
         }
         else {
-            this.humor = "Depressivo";
+            this.humor = "depressivo";
         }
 
     }
@@ -36,8 +37,8 @@ public class Tamagushi {
         this.nome = nome;
     }
 
-    public String getNome(){
-        return this.nome;
+    public void getNome(){
+        System.out.printf("%nNome do Tamagushi: %s",this.nome);
     }
 
     public void setFome(boolean fome){
@@ -60,24 +61,24 @@ public class Tamagushi {
         this.idade = idade;
     }
 
-    public int getIdade(){
-        return this.idade;
+    public void getIdade(){
+        System.out.printf("%nIdade do Tamagushi: %d",this.idade);
     }
 
     public void setHumor(){
         if (this.saúde == true && this.fome == false){
-            this.humor = "Feliz";
+            this.humor = "feliz";
         }
         else if ((this.saúde == true && this.fome == true)||(this.saúde == false && this.fome == false)){
-            this.humor = "Triste";
+            this.humor = "triste";
         }
         else {
-            this.humor = "Depressivo";
+            this.humor = "depressivo";
         }
     }
 
-    public String getHumor(){
-        return this.humor;
+    public void getHumor(){
+        System.out.printf("%nO %s está %s.",this.nome,this.humor);
     }
 
     public void status(){

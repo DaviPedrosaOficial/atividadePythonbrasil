@@ -1,3 +1,4 @@
+package FormasGeometricas;
 /*Classe Retangulo: Crie uma classe que modele um retangulo:
 
 Atributos: LadoA, LadoB (ou Comprimento e Largura, ou Base e Altura, a escolher)

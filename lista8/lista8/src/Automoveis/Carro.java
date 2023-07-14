@@ -1,3 +1,4 @@
+package Automoveis;
 /*Classe carro: Implemente uma classe chamada Carro com as seguintes propriedades:
 
 Um veículo tem um certo consumo de combustível (medidos em km / litro) e uma certa quantidade de combustível no tanque.

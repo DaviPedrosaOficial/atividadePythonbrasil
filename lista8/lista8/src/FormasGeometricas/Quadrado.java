@@ -1,3 +1,4 @@
+package FormasGeometricas;
 /*Classe Quadrado: Crie uma classe que modele um quadrado:
 
 Atributos: Tamanho do lado

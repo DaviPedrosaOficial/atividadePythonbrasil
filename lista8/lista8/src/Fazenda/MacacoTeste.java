@@ -1,3 +1,4 @@
+package Fazenda;
 public class MacacoTeste {
     
     public static void main(String [] args){

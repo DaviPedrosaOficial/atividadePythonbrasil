@@ -1,3 +1,4 @@
+package Automoveis;
 /*Classe Bomba de Combustível: Faça um programa completo utilizando classes e métodos que:
 
 Possua uma classe chamada bombaCombustível, com no mínimo esses atributos:

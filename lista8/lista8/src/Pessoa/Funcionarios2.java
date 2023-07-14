@@ -1,3 +1,4 @@
+package Pessoa;
 /*Aprimore a classe do exercício anterior para adicionar o método aumentarSalario (porcentualDeAumento) 
 que aumente o salário do funcionário em uma certa porcentagem.
 
